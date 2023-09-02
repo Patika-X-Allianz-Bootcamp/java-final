@@ -1,1 +1,0 @@
-# saglik_turizmi
