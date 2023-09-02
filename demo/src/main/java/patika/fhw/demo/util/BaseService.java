@@ -94,7 +94,7 @@ public abstract class BaseService<
     LocalDateTime currentTime = LocalDateTime.now();
     
     for (Entity entity : entities) {
-        if (entity instanceof Appointment) { // Eğer Entity'nin tipi 'Appointment' ise
+        if (entity instanceof Appointment) { 
             Appointment appointment = (Appointment) entity;
             
             LocalDateTime creationTime = appointment.getCreationTimestamp();
