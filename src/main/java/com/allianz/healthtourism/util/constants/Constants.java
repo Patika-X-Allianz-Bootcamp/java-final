@@ -21,5 +21,5 @@ public class Constants {
             "Arrival city must be same as patients' city.";
     public static final String HOTEL_CITY_ERROR_MESSAGE = "" +
             "Hotel city must be same as doctors' city.";
-    public static final long SCHEDULER_DELAY = 1;
+    public static final long SCHEDULER_DELAY = 10;
 }
