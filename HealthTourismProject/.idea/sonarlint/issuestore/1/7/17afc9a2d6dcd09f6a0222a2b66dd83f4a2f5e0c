@@ -1,0 +1,9 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(óšê²øÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(Î‰æË
+s
+java:S1128"]Remove this unused import 'com.tugceozcakir.healthtourismproject.database.entity.UserEntity'.(ö Ù
+L
+java:S1128"7Remove this unused import 'jakarta.persistence.Column'.(Ó‰ÙE
+U
+java:S1128":Remove this unused import 'jakarta.persistence.ManyToOne'.(áîÖãùÿÿÿÿ

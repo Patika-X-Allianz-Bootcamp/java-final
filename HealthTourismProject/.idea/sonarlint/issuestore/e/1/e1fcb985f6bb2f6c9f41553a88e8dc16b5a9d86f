@@ -1,0 +1,14 @@
+
+X	java:S1250"<This block of commented-out lines of code should be removed.( ƒ…¤8¤ş×ì£1
+W	java:S125M"<This block of commented-out lines of code should be removed.(‹ÜE8ı¡Øì£1
+H
+java:S1168Z"+Return an empty collection instead of null.(¥¹ï8×ËÅ£1
+H
+java:S1168f"+Return an empty collection instead of null.(¥¹ï8ÙËÅ£1
+Y	java:S125€"<This block of commented-out lines of code should be removed.(É„³8£ÖØì£1
+I
+java:S1168"+Return an empty collection instead of null.(¥¹ï8˜ıÅ£1
+
+java:S1128"dRemove this unused import 'com.tugceozcakir.healthtourismproject.database.entity.ReservationEntity'.(äÚãÎ8Ş–ÀÛ¤1
+t
+java:S1128	"WRemove this unused import 'com.tugceozcakir.healthtourismproject.model.ReservationDTO'.(¤§‰‡8Ş–ÀÛ¤1

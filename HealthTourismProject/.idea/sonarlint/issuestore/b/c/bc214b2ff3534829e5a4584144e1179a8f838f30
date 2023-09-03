@@ -1,0 +1,20 @@
+
+X	java:S125"<This block of commented-out lines of code should be removed.(ÄÙ’›8µËìº£1
+X	java:S125/"<This block of commented-out lines of code should be removed.(—ô¡ã8ÉËìº£1
+]	java:S1256"<This block of commented-out lines of code should be removed.(Ş“É‚şÿÿÿÿ8±÷œì£1
+H
+java:S1168G"+Return an empty collection instead of null.(¥¹ï8ë¤›ì£1
+H
+java:S1168S"+Return an empty collection instead of null.(¥¹ï8ÿ¤›ì£1
+X	java:S125^"<This block of commented-out lines of code should be removed.(—ô¡ã8ŞËìº£1
+X	java:S125e"<This block of commented-out lines of code should be removed.(É¬Ú‘8ƒ‡ï£1
+H
+java:S1168w"+Return an empty collection instead of null.(¥¹ï8’¥›ì£1
+Y	java:S125"<This block of commented-out lines of code should be removed.(ß¢Î¥8âËìº£1
+X	java:S125„"<This block of commented-out lines of code should be removed.(É—é=8†Óì£1
+
+java:S1128"dRemove this unused import 'com.tugceozcakir.healthtourismproject.database.entity.ReservationEntity'.(äÚãÎ8ê‡ï£1
+t
+java:S1128"WRemove this unused import 'com.tugceozcakir.healthtourismproject.model.ReservationDTO'.(¤§‰‡8ì‡ï£1
+e
+java:S1128"HRemove this unused import 'org.springframework.context.annotation.Lazy'.(İ·­æ8ì‡ï£1

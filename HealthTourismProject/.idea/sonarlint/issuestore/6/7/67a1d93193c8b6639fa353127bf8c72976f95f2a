@@ -1,0 +1,8 @@
+
+X	java:S125"<This block of commented-out lines of code should be removed.(¡à¼™8ƒğåº£1
+‡
+java:S1128"eRemove this unused import 'com.tugceozcakir.healthtourismproject.database.entity.AvailabilityEntity'.(ªÚÍÑÿÿÿÿÿ8…ğåº£1
+€
+java:S1128"^Remove this unused import 'com.tugceozcakir.healthtourismproject.database.entity.HotelEntity'.(€•˜Ùüÿÿÿÿ8…ğåº£1
+
+java:S1128"dRemove this unused import 'com.tugceozcakir.healthtourismproject.database.entity.ReservationEntity'.(äÚãÎ8…ğåº£1

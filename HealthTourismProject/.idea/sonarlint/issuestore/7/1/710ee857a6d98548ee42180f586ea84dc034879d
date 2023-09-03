@@ -1,0 +1,22 @@
+
+ƒ
+java:S1128"aRemove this unused import 'com.tugceozcakir.healthtourismproject.database.entity.AirplaneEntity'.(°æ­èşÿÿÿÿ8œ÷¼£1
+
+java:S1128"_Remove this unused import 'com.tugceozcakir.healthtourismproject.database.entity.DoctorEntity'.(ÂŠø¬øÿÿÿÿ8œ÷¼£1
+y
+java:S1128"]Remove this unused import 'com.tugceozcakir.healthtourismproject.database.entity.RoomEntity'.(ô½«i8œ÷¼£1
+z
+java:S1128"]Remove this unused import 'com.tugceozcakir.healthtourismproject.database.entity.UserEntity'.(ö Ù8Œ¾“º£1
+‚
+java:S1128"`Remove this unused import 'com.tugceozcakir.healthtourismproject.model.enums.ReservationStatus'.(š¥ÜÀşÿÿÿÿ8’Ş’ì£1
+ˆ
+java:S1128"fRemove this unused import 'com.tugceozcakir.healthtourismproject.model.requestDTO.AirplaneRequestDTO'.(ã•˜Äøÿÿÿÿ8Ğé“ì£1
+†
+java:S1128	"dRemove this unused import 'com.tugceozcakir.healthtourismproject.model.requestDTO.DoctorRequestDTO'.(¾‡®Íÿÿÿÿÿ8Ğé“ì£1
+„
+java:S1128
+"bRemove this unused import 'com.tugceozcakir.healthtourismproject.model.requestDTO.RoomRequestDTO'.(ÖúÜşÿÿÿÿ8Ñé“ì£1
+
+java:S1128"bRemove this unused import 'com.tugceozcakir.healthtourismproject.model.requestDTO.UserRequestDTO'.(ùç»‡8Òé“ì£1
+R
+java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èıÿÿÿÿ8“Ş’ì£1

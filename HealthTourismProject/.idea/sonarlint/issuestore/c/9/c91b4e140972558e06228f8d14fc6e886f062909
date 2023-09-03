@@ -1,0 +1,16 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(óšê²øÿÿÿÿ
+]	java:S125"<This block of commented-out lines of code should be removed.(„Ñ¨Æûÿÿÿÿ8£ü”À¢1
+„
+java:S1128"gRemove this unused import 'com.tugceozcakir.healthtourismproject.database.entity.AirlineCompanyEntity'.(ÑÖ™Ö8§ü”À¢1
+‡
+java:S1128"eRemove this unused import 'com.tugceozcakir.healthtourismproject.database.entity.AvailabilityEntity'.(ªÚÍÑÿÿÿÿÿ8°£¬á¢1
+
+java:S1128"dRemove this unused import 'com.tugceozcakir.healthtourismproject.database.entity.ReservationEntity'.(äÚãÎ8°£¬á¢1
+L
+java:S1128"7Remove this unused import 'jakarta.persistence.Column'.(Ó‰ÙE
+U
+java:S1128	":Remove this unused import 'jakarta.persistence.ManyToOne'.(áîÖãùÿÿÿÿ
+U
+java:S1128
+":Remove this unused import 'jakarta.persistence.OneToMany'.( ëîéúÿÿÿÿ
