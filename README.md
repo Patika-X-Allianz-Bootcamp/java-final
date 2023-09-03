@@ -7,13 +7,12 @@
 - [Class Diagram](#class-diagram)
 - [Roles](#roles)
 - [Usage](#usage)
-- [Postman](#postman)
 
 ## Description
 
-The Health Tourism Application is a platform that facilitates patients' travel to different countries for receiving healthcare services. 
-The application aims to accelerate the process of patients receiving services from good doctors and hospitals abroad.
-The patient can perform all transactions on this site instead of wasting time on other sites for hotel and flight reservations.
+The Health Tourism Application is a platform designed to streamline patients' travel arrangements to various countries for receiving healthcare services. 
+The primary goal of the application is to expedite the process of patients accessing medical care from reputable doctors and hospitals overseas. 
+Instead of spending time on multiple websites for hotel and flight bookings, patients can conveniently manage all their travel-related transactions through this platform.
 
 ### Requirements
 
@@ -23,17 +22,20 @@ The patient can perform all transactions on this site instead of wasting time on
 ### Installation
 
 ```
-1. git clone https://github.com/haruntasci/health-tourism-api-springboot.git
+1. Begin by cloning the repository:
 
-2. Edit properties according to your database information
+   git clone https://github.com/haruntasci/health-tourism-api-springboot.git
+
+2. Customize the properties based on your database information:
+
    spring.datasource.url=jdbc:postgresql:yourURL
    spring.datasource.username=yourUsername
    spring.datasource.password=yourPassword
 
-3. In Edit Configurations section write as Active profiles: dev
+3. Under the "Edit Configurations" section, set the Active profiles to "dev" for proper configuration.
 ```  
 ### Class Diagram
-![health-tourism-diag](https://github.com/haruntasci/health-tourism-api-springboot/assets/99567926/dfe4975e-4b3d-475f-8181-69e37ff91ff9)
+![health-tourism-diag](https://github.com/Patika-X-Allianz-Bootcamp/java-final/assets/99567926/e84a4e94-889a-4825-99aa-9c66678d3665)
 
 ## Roles
 There are 3 roles:
@@ -48,7 +50,7 @@ There are 3 roles:
 ## Usage
 1. Admin creates countries, cities, hospitals, doctors, flights, hotels.
 2. Patient creates a patient and an appointment. To create appointment, Patient selects doctor and sets the appointment date.
-3. The patient then chooses suitable departure and return flights based on the appointment, creating a flight booking.
+3. Patient then chooses suitable departure and return flights based on the appointment, creating a flight booking.
 - Departure flights' arrival time must be at least 4 hours before the appointment time.
 - Return flights' departure time must be at least 4 hours after the appointment time.
 - Departure flights' departure city must be the same as the patient's city.
@@ -68,6 +70,5 @@ There are 3 roles:
 - Hotel city must be same as doctors' city.
 5. Doctor creates a medical-record and adds it to appointment.
 
-  ## Postman
-  [Link](https://api.postman.com/collections/9589337-f18e4bbd-556d-43e0-85e9-72aefe16f0f5?access_key=PMAT-01H96D1XQ756Z0PCAHWX33NY53)
+
 
