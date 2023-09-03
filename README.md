@@ -24,9 +24,11 @@ Instead of spending time on multiple websites for hotel and flight bookings, pat
 
 ```
 1. Begin by cloning the repository:
-git clone https://github.com/haruntasci/health-tourism-api-springboot.git
+
+   git clone https://github.com/haruntasci/health-tourism-api-springboot.git
 
 2. Customize the properties based on your database information:
+
    spring.datasource.url=jdbc:postgresql:yourURL
    spring.datasource.username=yourUsername
    spring.datasource.password=yourPassword
