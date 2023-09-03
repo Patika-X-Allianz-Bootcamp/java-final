@@ -11,9 +11,9 @@
 
 ## Description
 
-The Health Tourism Application is a platform that facilitates patients' travel to different countries for receiving healthcare services. 
-The application aims to accelerate the process of patients receiving services from good doctors and hospitals abroad.
-The patient can perform all transactions on this site instead of wasting time on other sites for hotel and flight reservations.
+The Health Tourism Application is a platform designed to streamline patients' travel arrangements to various countries for receiving healthcare services. 
+The primary goal of the application is to expedite the process of patients accessing medical care from reputable doctors and hospitals overseas. 
+Instead of spending time on multiple websites for hotel and flight bookings, patients can conveniently manage all their travel-related transactions through this platform.
 
 ### Requirements
 
