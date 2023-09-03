@@ -68,9 +68,21 @@ public class SecurityConfiguration {
 
     private static final String[] USER_AUTH_WHITELIST = {
             "/appointment/**",
+            "/bank-account",
             "/prescription/get-all-filter",
             "/prescription",
 
+    };
+
+    private static final String[] DOCTOR_AUTH_WHITELIST = {
+            "/appointment/**",
+            "/bank-account",
+            "/prescription/get-all-filter",
+            "/prescription",
+            "/doctor/**",
+            "/doctor",
+            "/hospital/**",
+            "/hospital",
     };
 
     private static final String[] ADMIN_AUTH_WHITELIST = {
@@ -94,6 +106,7 @@ public class SecurityConfiguration {
                 .authorizeHttpRequests()
                 .requestMatchers(AUTH_WHITELIST).permitAll()
                 .requestMatchers(USER_AUTH_WHITELIST).hasRole("user")
+                .requestMatchers(DOCTOR_AUTH_WHITELIST).hasRole("doctor")
                 .requestMatchers(ADMIN_AUTH_WHITELIST).hasRole("admin")
                 .and()
 
