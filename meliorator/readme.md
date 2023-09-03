@@ -36,13 +36,9 @@ database adı eklemeniz yeterlidir.Eğer port ayarınız default değilse bunu d
 ## Uygulamayı Çalıştırma
 Uygulamayı IDE'nizde çalıştırabilir veya projenin kök dizininde aşağıdaki komutu çalıştırarak başlatabilirsiniz:
 
-arduino
-Copy code
 ./mvnw spring-boot:run
 veya
 
-arduino
-Copy code
 mvn spring-boot:run
 Bu komut, Spring Boot uygulamanızı başlatacaktır.
 
