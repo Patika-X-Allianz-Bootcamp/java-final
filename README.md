@@ -1,2 +1,3 @@
-# java-final
-Final assignment of Java lectures
+# Health Tourism Project
+
+This project is a graduation project prepared within the scope of java education.
