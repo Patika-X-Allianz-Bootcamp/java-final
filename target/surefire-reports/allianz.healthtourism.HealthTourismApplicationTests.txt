@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: allianz.healthtourism.HealthTourismApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.445 s - in allianz.healthtourism.HealthTourismApplicationTests
