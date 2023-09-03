@@ -1,6 +1,6 @@
-# Spring Boot Medical Tourism Application
+# Spring Boot Health Tourism Application
 
-This document provides a step-by-step guide for developing a medical tourism application using Spring Boot. The medical tourism application aims to facilitate patients' travel to different countries or regions to receive healthcare services. This document explains how to develop the application by covering its basic requirements, project components, and important steps.
+This document provides a step-by-step guide for developing a health tourism application using Spring Boot. The health tourism application aims to facilitate patients' travel to different countries or regions to receive healthcare services. This document explains how to develop the application by covering its basic requirements, project components, and important steps.
 
 ## Table of Contents
 1. [Project Creation and Basic Configuration](#1-project-creation-and-basic-configuration)
@@ -57,5 +57,6 @@ Add dependencies such as Web, JPA (Java Persistence API), etc., to your project 
 
 #### 6.1 Generate a Travel Plan
 - Prepare a travel plan based on appointments received from hospitals and doctors.
+- Implement a mechanism to invalidate unconfirmed appointments and reservations within a specified time frame (e.g., 10 minutes).
 
-This README provides an overview of the steps and components involved in developing a Spring Boot-based medical tourism application. You can refer to the individual sections for detailed instructions on each aspect of the project.
+This README provides an overview of the steps and components involved in developing a Spring Boot-based health tourism application. You can refer to the individual sections for detailed instructions on each aspect of the project.
