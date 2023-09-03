@@ -23,14 +23,15 @@ Instead of spending time on multiple websites for hotel and flight bookings, pat
 ### Installation
 
 ```
-1. git clone https://github.com/haruntasci/health-tourism-api-springboot.git
+1. Begin by cloning the repository:
+git clone https://github.com/haruntasci/health-tourism-api-springboot.git
 
-2. Edit properties according to your database information
+2. Customize the properties based on your database information:
    spring.datasource.url=jdbc:postgresql:yourURL
    spring.datasource.username=yourUsername
    spring.datasource.password=yourPassword
 
-3. In Edit Configurations section write as Active profiles: dev
+3. Under the "Edit Configurations" section, set the Active profiles to "dev" for proper configuration.
 ```  
 ### Class Diagram
 ![health-tourism-diag](https://github.com/haruntasci/health-tourism-api-springboot/assets/99567926/dfe4975e-4b3d-475f-8181-69e37ff91ff9)
