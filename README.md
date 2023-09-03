@@ -36,7 +36,7 @@ Instead of spending time on multiple websites for hotel and flight bookings, pat
 3. Under the "Edit Configurations" section, set the Active profiles to "dev" for proper configuration.
 ```  
 ### Class Diagram
-![health-tourism-diag](https://github.com/haruntasci/health-tourism-api-springboot/assets/99567926/dfe4975e-4b3d-475f-8181-69e37ff91ff9)
+![health-tourism-diag](https://github.com/Patika-X-Allianz-Bootcamp/java-final/assets/99567926/e84a4e94-889a-4825-99aa-9c66678d3665)
 
 ## Roles
 There are 3 roles:
