@@ -1,7 +1,9 @@
 package com.tourismcorp.healthtourism.controller;
 
+import com.tourismcorp.healthtourism.database.entities.DoctorEntity;
 import com.tourismcorp.healthtourism.database.entities.UserEntity;
 import com.tourismcorp.healthtourism.model.requestDTO.LoginRequestDTO;
+import com.tourismcorp.healthtourism.service.DoctorService;
 import com.tourismcorp.healthtourism.service.UserService;
 import com.tourismcorp.healthtourism.util.security.JWTUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,11 +31,15 @@ public class AuthorizationController {
 
     private final UserService userService;
 
+    private final DoctorService doctorService;
+
     @Autowired
-    public AuthorizationController(@Lazy AuthenticationManager authManager, @Lazy JWTUtil jwtUtil, @Lazy UserService userService) {
+    public AuthorizationController(@Lazy AuthenticationManager authManager, @Lazy JWTUtil jwtUtil,
+                                   @Lazy UserService userService, @Lazy DoctorService doctorService) {
         this.authManager = authManager;
         this.jwtUtil = jwtUtil;
         this.userService = userService;
+        this.doctorService = doctorService;
     }
 
 
@@ -53,15 +59,16 @@ public class AuthorizationController {
     }
 
 
-    @PostMapping("register")
+    @PostMapping("register-user")
     public ResponseEntity<Boolean> loginHandler(@RequestBody UserEntity body) {
-
         userService.saveUserByRole(body);
-
         return new ResponseEntity<>(Boolean.TRUE, HttpStatus.OK);
-
-
     }
 
+    @PostMapping("register-doctor")
+    public ResponseEntity<Boolean> registerDoctor(@RequestBody DoctorEntity body) {
+        doctorService.saveDoctorByRole(body);
+        return new ResponseEntity<>(Boolean.TRUE, HttpStatus.OK);
+    }
 
 }

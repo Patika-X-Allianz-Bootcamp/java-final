@@ -52,4 +52,7 @@ public class AppointmentEntity extends BaseEntity {
     @JoinColumn(name = "seat_entity_id")
     private SeatEntity seat;
 
+    @Column
+    private Boolean isPaid = false;
+
 }
