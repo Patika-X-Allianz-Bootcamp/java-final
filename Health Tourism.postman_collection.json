@@ -1,0 +1,1031 @@
+{
+	"info": {
+		"_postman_id": "c1574b57-ae4a-428d-9cc4-15c5159a3e10",
+		"name": "Health Tourism",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28851834"
+	},
+	"item": [
+		{
+			"name": "01 - Admin",
+			"item": [
+				{
+					"name": "01 - Sign-up for Admin",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"hburak-admin\",\n  \"firstName\": \"Hasan Burak\",\n  \"lastName\": \"Songur\",\n  \"password\": \"1234\",\n  \"email\": \"hbs@gmail.com\",\n  \"photoLink\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/auth/admin/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"auth",
+								"admin",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Login for Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"hbs@gmail.com\",\n  \"password\": \"1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Create City From",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"İzmir\",\n  \"country\": \"Türkiye\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04 - Create City To",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"İstanbul\",\n  \"country\": \"Türkiye\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 - Get All Cities",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"pageNumber\": 0,\n  \"pageSize\": 10,\n  \"sortDTO\": {\n    \"columnName\": \"id\",\n    \"directionEnum\": \"ASC\"\n  },\n  \"filters\": [\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/city/get-all-filter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"city",
+								"get-all-filter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "06 - Create Hospital",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Medicana\",\n  \"cityId\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/hospital",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"hospital"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "07 - Create Health Care Service",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"hair-impl\",\n  \"price\": 7000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/health-care-service",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"health-care-service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "09 - Get All Hospitals",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"pageNumber\": 0,\n  \"pageSize\": 10,\n  \"sortDTO\": {\n    \"columnName\": \"id\",\n    \"directionEnum\": \"ASC\"\n  },\n  \"filters\": [\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/hospital/get-all-filter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"hospital",
+								"get-all-filter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "10 - Add Health Care Service To Hospital",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/hospital/930e22d6-9880-4996-87e5-ea7ca2ab5015/addTo/1d3ff9bc-c3c7-4497-ae4c-74d204095bf2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"hospital",
+								"930e22d6-9880-4996-87e5-ea7ca2ab5015",
+								"addTo",
+								"1d3ff9bc-c3c7-4497-ae4c-74d204095bf2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "11 - Create Doctor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"hospitalId\": 1,\n  \"healthCareServiceId\": 1,\n  \"user\": {\n    \"username\": \"drAli\",\n    \"firstName\": \"Ali\",\n    \"lastName\": \"Atay\",\n    \"password\": \"1234\",\n    \"email\": \"aa@gmail.com\",\n    \"photoLink\": null\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/doctor/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"doctor",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "12 - Get All Doctors",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"pageNumber\": 0,\n  \"pageSize\": 10,\n  \"sortDTO\": {\n    \"columnName\": \"id\",\n    \"directionEnum\": \"ASC\"\n  },\n  \"filters\": [\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/doctor/get-all-filter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"doctor",
+								"get-all-filter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "13 - Create Hotel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"lucida\",\n  \"price\": 200,\n  \"cityId\": 2,\n  \"roomCount\": 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/hotel",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"hotel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "14 - Get All Hotels",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"pageNumber\": 0,\n  \"pageSize\": 10,\n  \"sortDTO\": {\n    \"columnName\": \"id\",\n    \"directionEnum\": \"ASC\"\n  },\n  \"filters\": [\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/hotel/get-all-filter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"hotel",
+								"get-all-filter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "15 - Create Plane",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Kızıl Kuş\",\n  \"seatCount\": 78,\n  \"cityId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/plane",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"plane"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "16 - Get All Planes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"pageNumber\": 0,\n  \"pageSize\": 10,\n  \"sortDTO\": {\n    \"columnName\": \"id\",\n    \"directionEnum\": \"ASC\"\n  },\n  \"filters\": [\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/plane/get-all-filter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"plane",
+								"get-all-filter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "17 - Create Flight",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"price\": 300,\n  \"flightDate\": \"2023-08-31T11:47:42.637Z\",\n  \"cityToId\": 2,\n  \"cityFromId\": 1,\n  \"planeId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/flight",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"flight"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "18 - Get All Flights",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"pageNumber\": 0,\n  \"pageSize\": 10,\n  \"sortDTO\": {\n    \"columnName\": \"id\",\n    \"directionEnum\": \"ASC\"\n  },\n  \"filters\": [\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/flight/get-all-filter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"flight",
+								"get-all-filter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "26 - Get All Appointments Existed",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"pageNumber\": 0,\n  \"pageSize\": 10,\n  \"sortDTO\": {\n    \"columnName\": \"id\",\n    \"directionEnum\": \"ASC\"\n  },\n  \"filters\": [\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/appointment/get-all-filter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"appointment",
+								"get-all-filter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "32 - Get All Plane Tickets",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"pageNumber\": 0,\n  \"pageSize\": 10,\n  \"sortDTO\": {\n    \"columnName\": \"id\",\n    \"directionEnum\": \"ASC\"\n  },\n  \"filters\": [\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/plane-ticket/get-all-filter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"plane-ticket",
+								"get-all-filter"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJBTExJQU5aIiwiaWF0IjoxNjkzNzM0OTEzLCJlbWFpbCI6Imhic0BnbWFpbC5jb20ifQ.W_j-is-p6TWOGWWOgo_7vazj7hlgBtIHGrVhn-4zvNg",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Patient",
+			"item": [
+				{
+					"name": "19 - Sign-up for Patient",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"user\": {\n    \"username\": \"hburak-patient\",\n    \"firstName\": \"Hasan Burak\",\n    \"lastName\": \"Songur\",\n    \"password\": \"1234\",\n     \"email\": \"hasanburaksongur@gmail.com\",\n     \"photoLink\": null\n  }\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/patient/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"patient",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "20 - Get All Patients",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"pageNumber\": 0,\n  \"pageSize\": 10,\n  \"sortDTO\": {\n    \"columnName\": \"id\",\n    \"directionEnum\": \"ASC\"\n  },\n  \"filters\": [\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/patient/get-all-filter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"patient",
+								"get-all-filter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "21 - Login for Patient",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"hasanburaksongur@gmail.com\",\n  \"password\": \"1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "22 - Get All Health Care Services",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"pageNumber\": 0,\n  \"pageSize\": 10,\n  \"sortDTO\": {\n    \"columnName\": \"id\",\n    \"directionEnum\": \"ASC\"\n  },\n  \"filters\": [\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/health-care-service/get-all-filter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"health-care-service",
+								"get-all-filter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "23 - Get Hospital",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/hospital/1d3ff9bc-c3c7-4497-ae4c-74d204095bf2/forPatient",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"hospital",
+								"1d3ff9bc-c3c7-4497-ae4c-74d204095bf2",
+								"forPatient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "24 - Get Doctor With Appointment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/doctor/c2697d9b-2b50-40ea-87a9-7f1f1a0329d5/forPatient",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"doctor",
+								"c2697d9b-2b50-40ea-87a9-7f1f1a0329d5",
+								"forPatient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "25 - Create Appointment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"appointmentDate\": \"2023-09-01T14:30:00\",\n  \"patientId\": 2,\n  \"doctorId\": 1,\n  \"healthServiceId\": 1,\n  \"hospitalId\": 1\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/appointment/save-with-id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"appointment",
+								"save-with-id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "27 - Get Patient with Appointments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/patient/452e4954-ec9a-4421-a7ff-e649b6de7d92",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"patient",
+								"452e4954-ec9a-4421-a7ff-e649b6de7d92"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "28 - Get Hotels in the City with Date Availability",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/hotel/city/İstanbul",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"hotel",
+								"city",
+								"İstanbul"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "29 - Create Booking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"bookingDate\": \"2023-09-01\",\n  \"hotelId\": 1,\n  \"patientId\": 2,\n  \"roomId\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/booking",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"booking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "30 - Get Flight specified with the route",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/flight/city/İzmir/İstanbul",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"flight",
+								"city",
+								"İzmir",
+								"İstanbul"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "31 - Create Flight Ticket",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"flightId\": 1,\n  \"seatId\": 6,\n  \"patientId\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/plane-ticket",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"plane-ticket"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJBTExJQU5aIiwiaWF0IjoxNjkzNzMyNzE4LCJlbWFpbCI6Imhhc2FuYnVyYWtzb25ndXJAZ21haWwuY29tIn0.FYDGG0gL5_eR_fRyjtgAJakLW2ub7m-KElqmozOAmwQ",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Doctor",
+			"item": [
+				{
+					"name": "32 - Login for Doctor",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"aa@gmail.com\",\n  \"password\": \"1234\"\n}s",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "33 - Create Examination Record From Appointment",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"notes\": \"bla bla lba\",\n  \"appointmentId\": 1,\n  \"doctorId\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/examination-record",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"examination-record"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJBTExJQU5aIiwiaWF0IjoxNjkzNzM1NDM2LCJlbWFpbCI6ImFhQGdtYWlsLmNvbSJ9.YC6N-tcHtNPjhU_hzv2BAfpNYviXDkM1S74bIAQJyQA",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	]
+}
