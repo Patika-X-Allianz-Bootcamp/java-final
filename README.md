@@ -2,6 +2,7 @@
 
 ### This is a Medical Tourism Planner backend system developed in Java using Spring Boot.
 
+---
 
 ## Features
 
